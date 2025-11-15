@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation"
 import HeroCarousel from "@/components/hero-carousel"
+// import SeoHighlight from "@/components/seo-highlight"
 import LocationsSection from "@/components/locations-section"
 import PrivateEventsSection from "@/components/private-events-section"
 import AboutSection from "@/components/about-section"
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroCarousel />
+      {/* <SeoHighlight /> */}
       <LocationsSection />
       <PrivateEventsSection />
       <AboutSection />
