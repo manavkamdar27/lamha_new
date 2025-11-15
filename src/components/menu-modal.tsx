@@ -1211,28 +1211,41 @@ const MenuModal = ({ isOpen, onClose }: MenuModalProps) => {
               </Button>
             </div>
             {/* Horizontal Carousel for Full Menu Modal */}
-            <div className="relative">
+            <div className="relative mx-auto w-full max-w-3xl px-2 sm:px-4 lg:px-0">
               <Carousel className="w-full">
                 <CarouselContent>
                   {getMenuForLocation(selectedLocation).map((category, categoryIndex) => (
                     <CarouselItem key={categoryIndex} className="flex justify-center">
                       <div className="w-full max-w-2xl relative">
-                        {/* Category Header */}
-                        <h4
-                          className="text-xl md:text-2xl font-semibold border-b pb-2 text-center mt-6 md:mt-8"
-                          style={{ color: '#4F4D46', borderColor: '#B8943A' }}
+                        {/* Category Header with arrows inline */}
+                        <div
+                          className="mt-6 md:mt-8 border-y py-2 flex items-center justify-center gap-3"
+                          style={{ borderColor: '#B8943A' }}
                         >
-                          {category.category}
-                        </h4>
-                        <div className="space-y-4 pt-4">
+                          <CarouselPrevious
+                            variant="default"
+                            className="static left-auto top-auto translate-y-0 bg-[#B8943A] text-[#18181b] hover:bg-[#B8943A]/90 border-transparent disabled:bg-[#B8943A]/60 disabled:text-[#18181b]/60 h-9 w-9"
+                          />
+                          <h4
+                            className="text-center text-xl md:text-2xl font-semibold whitespace-nowrap"
+                            style={{ color: '#4F4D46' }}
+                          >
+                            {category.category}
+                          </h4>
+                          <CarouselNext
+                            variant="default"
+                            className="static right-auto top-auto translate-y-0 bg-[#B8943A] text-[#18181b] hover:bg-[#B8943A]/90 border-transparent disabled:bg-[#B8943A]/60 disabled:text-[#18181b]/60 h-9 w-9"
+                          />
+                        </div>
+                        <div className="grid gap-3 pt-4 md:grid-cols-2">
                           {category.items.map((item, itemIndex) => (
-                            <div key={itemIndex} className="flex justify-between items-start py-2">
-                              <div className="flex-1">
-                                <h5 className="font-semibold" style={{ color: '#4F4D46' }}>{item.name}</h5>
-                                <p className="text-sm mt-1" style={{ color: '#4F4D46', opacity: 0.8 }}>{item.description}</p>
-                              </div>
-                              <div className="ml-4 text-right">
-                                <span className="font-semibold" style={{ color: '#B8943A' }}>{item.price}</span>
+                            <div key={itemIndex} className="flex flex-col justify-between border border-[#E6D8B8] rounded-xl p-3 bg-white/30 min-h-[100px]">
+                              <div>
+                                <div className="flex items-start justify-between gap-2">
+                                  <h5 className="text-sm md:text-base font-semibold" style={{ color: '#4F4D46' }}>{item.name}</h5>
+                                  <span className="text-xs md:text-sm font-semibold whitespace-nowrap" style={{ color: '#B8943A' }}>{item.price}</span>
+                                </div>
+                                <p className="text-xs md:text-sm mt-2 leading-snug" style={{ color: '#4F4D46', opacity: 0.85 }}>{item.description}</p>
                               </div>
                             </div>
                           ))}
@@ -1241,17 +1254,6 @@ const MenuModal = ({ isOpen, onClose }: MenuModalProps) => {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                {/* Arrow buttons at the bottom center */}
-                <div className="flex justify-center items-center gap-4 mt-8">
-                  <CarouselPrevious
-                    variant="default"
-                    className="static relative left-0 top-0 translate-y-0 bg-[#B8943A] text-[#18181b] hover:bg-[#B8943A]/90 border-transparent disabled:bg-[#B8943A]/60 disabled:text-[#18181b]/60"
-                  />
-                  <CarouselNext
-                    variant="default"
-                    className="static relative left-0 top-0 translate-y-0 bg-[#B8943A] text-[#18181b] hover:bg-[#B8943A]/90 border-transparent disabled:bg-[#B8943A]/60 disabled:text-[#18181b]/60"
-                  />
-                </div>
               </Carousel>
             </div>
           </div>

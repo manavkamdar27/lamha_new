@@ -22,10 +22,10 @@ const TeamSection = () => (
         </div>
         <div className="w-full max-w-sm" style={{backgroundColor: '#FFFDF5', borderRadius: '16px'}}>
           <FlippableTeamCard
-            name="Ajay Shukla"
+            name="N.Chirag"
             role="Hospitality Manager"
-            brief="Ajay is the architect of the guest experience at Lamhaa. As our General Manager, he ensures that the warmth of our welcome and the precision of our service perfectly complement the creativity of our kitchen."
-            backDetails="A recognized leader in luxury dining, Ajay has held key roles at India’s most respected venues, including Mumbai’s acclaimed Masque, where he pioneered thoughtful, elegant hospitality. At Lamhaa, he focuses on building a culture of excellence—overseeing front-of-house operations, staff training, and service development. His dedication ensures every guest enjoys a seamless, personalized, and truly unforgettable experience."
+            brief="Chirag is the architect of the guest experience at Lamhaa. As our General Manager, he ensures that the warmth of our welcome and the precision of our service perfectly complement the creativity of our kitchen."
+            backDetails="A recognized leader in luxury dining, Chirag has held key roles at India’s most respected venues, including Mumbai’s acclaimed Masque, where he pioneered thoughtful, elegant hospitality. At Lamhaa, he focuses on building a culture of excellence—overseeing front-of-house operations, staff training, and service development. His dedication ensures every guest enjoys a seamless, personalized, and truly unforgettable experience."
           />
         </div>
         {/* <div style={{backgroundColor: '#FFFDF5', borderRadius: '16px'}}>
