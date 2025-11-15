@@ -102,6 +102,16 @@ const Navigation = () => {
                       Our Team
                     </NavigationMenuLink>
                   </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink
+                      href="https://www.clover.com/online-ordering/Lamhaa-bensalem"
+                      className={navigationMenuTriggerStyle() + ' font-oswald font-normal whitespace-nowrap'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Order Online
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
@@ -166,6 +176,16 @@ const Navigation = () => {
                       }}
                     >
                       Our Team
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      className="justify-start text-lg text-[#B8943A]"
+                      onClick={() => {
+                        window.open("https://www.clover.com/online-ordering/Lamhaa-bensalem", "_blank");
+                        setIsSheetOpen(false);
+                      }}
+                    >
+                      Order Online
                     </Button>
                   </div>
                 </SheetContent>
