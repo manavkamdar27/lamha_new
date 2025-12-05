@@ -15,7 +15,7 @@ const fullMenuBenselam = [
   {
     category: "Soup & Shorba",
     items: [
-      { name: "Manchow - Veg/Chicken", description: "Indo-Chinese classic. Savory broth, crisp noodles, bold flavors.", price: "$5.99/ $6.49" },
+      { name: "Manchow - Veg/Chicken", description: "Indo-Chinese classic. Savory broth, crisp noodles, bold flavors.", price: "$5.99/ $6.99" },
       { name: "Chicken Shorba", description: "Warming, spiced chicken broth. A comforting classic.", price: "$6.99" },
       { name: "Tomato Rasam", description: "Tangy South Indian tomato broth. Spiced, light, and comforting.", price: "$5.99" },
       { name: "Lemon Coriander", description: "Zesty broth with fresh lemon and aromatic coriander.", price: "$5.99" },
@@ -27,7 +27,7 @@ const fullMenuBenselam = [
       { name: "Green Salad", description: "Our classic Indian green salad, featuring a medley of farm-fresh vegetables.", price: "$5.99" },
       { name: "Papad - Roasted / Fried", description: "Crisp lentil wafers. Your choice: roasted or fried.", price: "$1.99" },
       { name: "Masala Papad", description: "Crisp papad topped with spicy onion-tomato mix and chaat masala.", price: "$3.99" },
-      { name: "Masala Peanut", description: "Roasted peanuts tossed with zesty onion, tomato, and spices.", price: "$6.99" },
+      { name: "Masala Peanut", description: "Roasted peanuts tossed with onion, tomato, and spices.", price: "$6.99" },
       { name: "Masala Kaju", description: "Golden cashews coated in our signature spice blend. Addictive crunch.", price: "$7.99" }
     ]
   },
@@ -54,6 +54,11 @@ items: [
     description: "Crispy vegetable balls tossed in tangy, spicy, Indo-Chinese sauce.", 
     price: "$12.99" 
   },
+    { 
+    name: "Chatpata Gobi", 
+    description: "Seasoned, crisp cauliflower florets in tangy spicy sauce", 
+    price: "$12.99" 
+  },
   { 
     name: "Dahi Ke Kabab", 
     description: "Crispy rolls filled with a creamy, spiced hung curd stuffing.", 
@@ -61,13 +66,13 @@ items: [
   },
   { 
     name: "Schezwan Momo - Veg", 
-    description: "Steamed or pan-fried vegetable dumplings tossed in a fiery schezwan sauce.", 
+    description: "Pan-fried vegetable dumplings tossed in a fiery schezwan sauce.", 
     price: "$11.99" 
   },
   { 
     name: "Palak Chaat", 
     description: "Crispy spinach, sweet yogurt, tangy chutneys. A textural delight.", 
-    price: "$11.99" 
+    price: "$10.99" 
   },
   { 
     name: "Papdi Chaat", 
@@ -137,7 +142,7 @@ items: [
   },
   { 
     name: "Schezwan Momos - Chicken", 
-    description: "Steamed or pan-fried chicken dumplings tossed in a fiery schezwan sauce.", 
+    description: "Pan-fried chicken dumplings tossed in a fiery schezwan sauce.", 
     price: "$12.99" 
   },
   { 
@@ -212,7 +217,7 @@ items: [
       price: "$16.99" 
     },
     { 
-      name: "Kesari Salmon Tikka", 
+      name: "Kesari Fish Tikka", 
       description: "Saffron-infused salmon, tender, subtly spiced, tandoor-grilled.", 
       price: "$16.99" 
     },
@@ -249,7 +254,7 @@ items: [
   items: [
     { 
       name: "Lamhaa Special Veg", 
-      description: "Our chef's signature chicken creation in delicately spiced cashew gravy.", 
+      description: "Our chef's signature vegetable medeley in delicately spiced cashew gravy.", 
       price: "$16.99" 
     },
     { 
@@ -265,7 +270,37 @@ items: [
     { 
       name: "Veg Kolhapuri", 
       description: "Chopped vegetables simmered in a rich, spicy gravy made with Kolhapuri masala and hint of coconut.", 
-      price: "$14.99" 
+      price: "$15.99" 
+    },
+    { 
+      name: "Tawa Mehfil", 
+      description: "Fiery paneer and capsicum preparation in a vibrant, bold sauce.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Methi Paneer", 
+      description: "Delicate, creamy fenugreek and paneer curry.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Malai Kofta", 
+      description: "Soft paneer dumplings in rich, creamy cashew gravy.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Palak Paneer", 
+      description: "Fresh spinach puree with soft paneer cubes.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Paneer Makhanwala", 
+      description: "Creamy, rich paneer curry in a luscious tomato-butter gravy.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Paneer Tikka Masala", 
+      description: "Smoky paneer tikka in a rich, creamy tomato gravy.", 
+      price: "$15.99" 
     },
     { 
       name: "Stuffed Dum Aloo", 
@@ -273,58 +308,28 @@ items: [
       price: "$14.99" 
     },
     { 
-      name: "Tawa Mehfil", 
-      description: "Fiery paneer and capsicum preparation in a vibrant, bold sauce.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Methi Paneer", 
-      description: "Delicate, creamy fenugreek and paneer curry.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Malai Kofta", 
-      description: "Soft paneer dumplings in rich, creamy cashew gravy.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Palak Paneer", 
-      description: "Fresh spinach puree with soft paneer cubes.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Paneer Makhanwala", 
-      description: "Creamy, rich paneer curry in a luscious tomato-butter gravy.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Paneer Tikka Masala", 
-      description: "Smoky paneer tikka in a rich, creamy tomato gravy.", 
-      price: "$14.99" 
-    },
-    { 
       name: "Mushroom Mutter", 
       description: "Tender Mushroom and green pea in tomato based, spicy gravy.", 
-      price: "$13.99" 
+      price: "$14.99" 
     },
     { 
       name: "Bhagara Mirch Baingan", 
       description: "Hyderabadi special. Baby eggplant & chilies in nutty, tangy gravy.", 
-      price: "$13.99" 
+      price: "$14.99" 
     },
     { 
       name: "Bhindi Masala", 
       description: "Stir-fried okra tossed with onions, tomatoes and robust Indian spices.", 
-      price: "$12.99" 
-    },
-    { 
-      name: "Daal Tadka", 
-      description: "Rich yellow lentils, tempered with sizzling ghee and spices.", 
-      price: "$12.99" 
+      price: "$14.99" 
     },
     { 
       name: "Daal Bhukara", 
       description: "Creamy black lentils, slow-cooked with butter and spices.", 
+      price: "$14.99" 
+    },
+    { 
+      name: "Daal Tadka", 
+      description: "Rich yellow lentils, tempered with sizzling ghee and spices.", 
       price: "$12.99" 
     }
   ]
@@ -365,17 +370,17 @@ items: [
     { 
       name: "Butter Chicken", 
       description: "Creamy, rich, mildly spiced chicken in tomato-butter gravy. Global favorite.", 
-      price: "$15.99" 
+      price: "$16.99" 
     },
     { 
       name: "Chicken Tikka Masala", 
       description: "Tandoor chicken tikka in a robust, spiced tomato-onion gravy.", 
-      price: "$15.99" 
+      price: "$16.99" 
     },
     { 
       name: "Mughlai Chicken Handi", 
       description: "Rich, creamy Mughlai chicken with cashews and saffron.", 
-      price: "$15.99" 
+      price: "$16.99" 
     },
     { 
       name: "Anda Ghotala", 
@@ -398,13 +403,13 @@ items: [
       price: "$5.99" 
     },
     { 
-      name: "Bagel Naan", 
-      description: "Bagel texture, tandoor smoky flavor. Unique.", 
+      name: "Peshwari Naan", 
+      description: "Soft tandoor-baked bread stuffed with nuts, raisins and coconut.", 
       price: "$5.99" 
     },
     { 
-      name: "Peshwari Naan", 
-      description: "Soft tandoor-baked bread stuffed with nuts, raisins and coconut.", 
+      name: "Paneer Kulcha", 
+      description: "Soft, leavened bread, savory spiced paneer stuffing.", 
       price: "$5.99" 
     },
     { 
@@ -420,12 +425,12 @@ items: [
     { 
       name: "Aloo Paratha", 
       description: "Whole wheat flatbread, spiced potato filling.", 
-      price: "$5.99" 
+      price: "$8.99" 
     },
     { 
       name: "Tandoori Roti / Phulka", 
       description: "Wholesome whole wheat flatbreads. Tandoor-baked or flame-puffed.", 
-      price: "$4.49" 
+      price: "$4.49 / $1.99" 
     }
   ]
 },
@@ -481,6 +486,11 @@ items: [
       name: "Sanatta Raita", 
       description: "Our unique house raita. Cool yogurt, special herb blend, subtle spice.", 
       price: "$4.99" 
+    },
+    { 
+      name: "Pineapple Raita", 
+      description: "Fresh yogurt, juicy pineapple, mild cumin.", 
+      price: "$4.99" 
     }
   ]
 },
@@ -527,7 +537,12 @@ items: [
       name: "Frozen Mint Lemonade", 
       description: "Cool, frosty lemonade blended with fresh mint for a crisp, refreshing twist.", 
       price: "$4.99" 
-    }
+    },
+    { 
+      name: "Kathiyawadi Lemon Soda", 
+      description: "Lemon soda with special Kathiyawadi masala.", 
+      price: "$4.49" 
+    },
   ]
 },
 {
@@ -536,7 +551,12 @@ items: [
     { 
       name: "Gadbad Ice-cream", 
       description: "Fun sundae! Multiple ice creams, fruits, nuts, sauces.", 
-      price: "$10.99" 
+      price: "$8.99" 
+    }, 
+    { 
+      name: "Orange Kulfi", 
+      description: "Homemade Indian ice cream, bright zesty orange flavor.", 
+      price: "$8.99" 
     },
     { 
       name: "Malpua", 
@@ -551,17 +571,12 @@ items: [
     { 
       name: "Sizzling Brownie w/Vanilla Ice-cream", 
       description: "Warm brownie on a sizzler, vanilla ice cream. Classic indulgence.", 
-      price: "$9.99" 
+      price: "$8.99" 
     },
     { 
       name: "Rose Malai Cake", 
       description: "Moist cake with unmistakable taste of Rose infused malai cream.", 
       price: "$7.99" 
-    },
-    { 
-      name: "Orange Kulfi", 
-      description: "Homemade Indian ice cream, bright zesty orange flavor.", 
-      price: "$6.99" 
     }
   ]
 }
@@ -572,7 +587,7 @@ const fullMenuHamilton = [
   {
     category: "Soup & Shorba",
     items: [
-      { name: "Manchow - Veg/Chicken", description: "Indo-Chinese classic. Savory broth, crisp noodles, bold flavors.", price: "$5.99/ $6.49" },
+      { name: "Manchow - Veg/Chicken", description: "Indo-Chinese classic. Savory broth, crisp noodles, bold flavors.", price: "$5.99/ $6.99" },
       { name: "Chicken Shorba", description: "Warming, spiced chicken broth. A comforting classic.", price: "$6.99" },
       { name: "Tomato Rasam", description: "Tangy South Indian tomato broth. Spiced, light, and comforting.", price: "$5.99" },
       { name: "Lemon Coriander", description: "Zesty broth with fresh lemon and aromatic coriander.", price: "$5.99" },
@@ -584,7 +599,7 @@ const fullMenuHamilton = [
       { name: "Green Salad", description: "Our classic Indian green salad, featuring a medley of farm-fresh vegetables.", price: "$5.99" },
       { name: "Papad - Roasted / Fried", description: "Crisp lentil wafers. Your choice: roasted or fried.", price: "$1.99" },
       { name: "Masala Papad", description: "Crisp papad topped with spicy onion-tomato mix and chaat masala.", price: "$3.99" },
-      { name: "Masala Peanut", description: "Roasted peanuts tossed with zesty onion, tomato, and spices.", price: "$6.99" },
+      { name: "Masala Peanut", description: "Roasted peanuts tossed with onion, tomato, and spices.", price: "$6.99" },
       { name: "Masala Kaju", description: "Golden cashews coated in our signature spice blend. Addictive crunch.", price: "$7.99" }
     ]
   },
@@ -611,6 +626,11 @@ items: [
     description: "Crispy vegetable balls tossed in tangy, spicy, Indo-Chinese sauce.", 
     price: "$12.99" 
   },
+    { 
+    name: "Chatpata Gobi", 
+    description: "Seasoned, crisp cauliflower florets in tangy spicy sauce", 
+    price: "$12.99" 
+  },
   { 
     name: "Dahi Ke Kabab", 
     description: "Crispy rolls filled with a creamy, spiced hung curd stuffing.", 
@@ -618,13 +638,13 @@ items: [
   },
   { 
     name: "Schezwan Momo - Veg", 
-    description: "Steamed or pan-fried vegetable dumplings tossed in a fiery schezwan sauce.", 
+    description: "Pan-fried vegetable dumplings tossed in a fiery schezwan sauce.", 
     price: "$11.99" 
   },
   { 
     name: "Palak Chaat", 
     description: "Crispy spinach, sweet yogurt, tangy chutneys. A textural delight.", 
-    price: "$11.99" 
+    price: "$10.99" 
   },
   { 
     name: "Papdi Chaat", 
@@ -694,7 +714,7 @@ items: [
   },
   { 
     name: "Schezwan Momos - Chicken", 
-    description: "Steamed or pan-fried chicken dumplings tossed in a fiery schezwan sauce.", 
+    description: "Pan-fried chicken dumplings tossed in a fiery schezwan sauce.", 
     price: "$12.99" 
   },
   { 
@@ -769,7 +789,7 @@ items: [
       price: "$16.99" 
     },
     { 
-      name: "Kesari Salmon Tikka", 
+      name: "Kesari Fish Tikka", 
       description: "Saffron-infused salmon, tender, subtly spiced, tandoor-grilled.", 
       price: "$16.99" 
     },
@@ -806,7 +826,7 @@ items: [
   items: [
     { 
       name: "Lamhaa Special Veg", 
-      description: "Our chef's signature chicken creation in delicately spiced cashew gravy.", 
+      description: "Our chef's signature vegetable medeley in delicately spiced cashew gravy.", 
       price: "$16.99" 
     },
     { 
@@ -822,7 +842,37 @@ items: [
     { 
       name: "Veg Kolhapuri", 
       description: "Chopped vegetables simmered in a rich, spicy gravy made with Kolhapuri masala and hint of coconut.", 
-      price: "$14.99" 
+      price: "$15.99" 
+    },
+    { 
+      name: "Tawa Mehfil", 
+      description: "Fiery paneer and capsicum preparation in a vibrant, bold sauce.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Methi Paneer", 
+      description: "Delicate, creamy fenugreek and paneer curry.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Malai Kofta", 
+      description: "Soft paneer dumplings in rich, creamy cashew gravy.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Palak Paneer", 
+      description: "Fresh spinach puree with soft paneer cubes.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Paneer Makhanwala", 
+      description: "Creamy, rich paneer curry in a luscious tomato-butter gravy.", 
+      price: "$15.99" 
+    },
+    { 
+      name: "Paneer Tikka Masala", 
+      description: "Smoky paneer tikka in a rich, creamy tomato gravy.", 
+      price: "$15.99" 
     },
     { 
       name: "Stuffed Dum Aloo", 
@@ -830,58 +880,28 @@ items: [
       price: "$14.99" 
     },
     { 
-      name: "Tawa Mehfil", 
-      description: "Fiery paneer and capsicum preparation in a vibrant, bold sauce.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Methi Paneer", 
-      description: "Delicate, creamy fenugreek and paneer curry.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Malai Kofta", 
-      description: "Soft paneer dumplings in rich, creamy cashew gravy.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Palak Paneer", 
-      description: "Fresh spinach puree with soft paneer cubes.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Paneer Makhanwala", 
-      description: "Creamy, rich paneer curry in a luscious tomato-butter gravy.", 
-      price: "$14.99" 
-    },
-    { 
-      name: "Paneer Tikka Masala", 
-      description: "Smoky paneer tikka in a rich, creamy tomato gravy.", 
-      price: "$14.99" 
-    },
-    { 
       name: "Mushroom Mutter", 
       description: "Tender Mushroom and green pea in tomato based, spicy gravy.", 
-      price: "$13.99" 
+      price: "$14.99" 
     },
     { 
       name: "Bhagara Mirch Baingan", 
       description: "Hyderabadi special. Baby eggplant & chilies in nutty, tangy gravy.", 
-      price: "$13.99" 
+      price: "$14.99" 
     },
     { 
       name: "Bhindi Masala", 
       description: "Stir-fried okra tossed with onions, tomatoes and robust Indian spices.", 
-      price: "$12.99" 
-    },
-    { 
-      name: "Daal Tadka", 
-      description: "Rich yellow lentils, tempered with sizzling ghee and spices.", 
-      price: "$12.99" 
+      price: "$14.99" 
     },
     { 
       name: "Daal Bhukara", 
       description: "Creamy black lentils, slow-cooked with butter and spices.", 
+      price: "$14.99" 
+    },
+    { 
+      name: "Daal Tadka", 
+      description: "Rich yellow lentils, tempered with sizzling ghee and spices.", 
       price: "$12.99" 
     }
   ]
@@ -922,17 +942,17 @@ items: [
     { 
       name: "Butter Chicken", 
       description: "Creamy, rich, mildly spiced chicken in tomato-butter gravy. Global favorite.", 
-      price: "$15.99" 
+      price: "$16.99" 
     },
     { 
       name: "Chicken Tikka Masala", 
       description: "Tandoor chicken tikka in a robust, spiced tomato-onion gravy.", 
-      price: "$15.99" 
+      price: "$16.99" 
     },
     { 
       name: "Mughlai Chicken Handi", 
       description: "Rich, creamy Mughlai chicken with cashews and saffron.", 
-      price: "$15.99" 
+      price: "$16.99" 
     },
     { 
       name: "Anda Ghotala", 
@@ -955,13 +975,13 @@ items: [
       price: "$5.99" 
     },
     { 
-      name: "Bagel Naan", 
-      description: "Bagel texture, tandoor smoky flavor. Unique.", 
+      name: "Peshwari Naan", 
+      description: "Soft tandoor-baked bread stuffed with nuts, raisins and coconut.", 
       price: "$5.99" 
     },
     { 
-      name: "Peshwari Naan", 
-      description: "Soft tandoor-baked bread stuffed with nuts, raisins and coconut.", 
+      name: "Paneer Kulcha", 
+      description: "Soft, leavened bread, savory spiced paneer stuffing.", 
       price: "$5.99" 
     },
     { 
@@ -977,12 +997,12 @@ items: [
     { 
       name: "Aloo Paratha", 
       description: "Whole wheat flatbread, spiced potato filling.", 
-      price: "$5.99" 
+      price: "$8.99" 
     },
     { 
       name: "Tandoori Roti / Phulka", 
       description: "Wholesome whole wheat flatbreads. Tandoor-baked or flame-puffed.", 
-      price: "$4.49" 
+      price: "$4.49 / $1.99" 
     }
   ]
 },
@@ -1038,6 +1058,11 @@ items: [
       name: "Sanatta Raita", 
       description: "Our unique house raita. Cool yogurt, special herb blend, subtle spice.", 
       price: "$4.99" 
+    },
+    { 
+      name: "Pineapple Raita", 
+      description: "Fresh yogurt, juicy pineapple, mild cumin.", 
+      price: "$4.99" 
     }
   ]
 },
@@ -1084,7 +1109,12 @@ items: [
       name: "Frozen Mint Lemonade", 
       description: "Cool, frosty lemonade blended with fresh mint for a crisp, refreshing twist.", 
       price: "$4.99" 
-    }
+    },
+    { 
+      name: "Kathiyawadi Lemon Soda", 
+      description: "Lemon soda with special Kathiyawadi masala.", 
+      price: "$4.49" 
+    },
   ]
 },
 {
@@ -1093,7 +1123,12 @@ items: [
     { 
       name: "Gadbad Ice-cream", 
       description: "Fun sundae! Multiple ice creams, fruits, nuts, sauces.", 
-      price: "$10.99" 
+      price: "$8.99" 
+    }, 
+    { 
+      name: "Orange Kulfi", 
+      description: "Homemade Indian ice cream, bright zesty orange flavor.", 
+      price: "$8.99" 
     },
     { 
       name: "Malpua", 
@@ -1108,17 +1143,12 @@ items: [
     { 
       name: "Sizzling Brownie w/Vanilla Ice-cream", 
       description: "Warm brownie on a sizzler, vanilla ice cream. Classic indulgence.", 
-      price: "$9.99" 
+      price: "$8.99" 
     },
     { 
       name: "Rose Malai Cake", 
       description: "Moist cake with unmistakable taste of Rose infused malai cream.", 
       price: "$7.99" 
-    },
-    { 
-      name: "Orange Kulfi", 
-      description: "Homemade Indian ice cream, bright zesty orange flavor.", 
-      price: "$6.99" 
     }
   ]
 }

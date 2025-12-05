@@ -68,18 +68,6 @@ const HeroCarousel = () => {
 
       {/* Two oval images side by side at the bottom of the carousel */}
       <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 z-20">
-        <div className="relative w-64 h-32 flex flex-col items-center mt-8 mb-8 md:mt-0 md:mb-0">
-          <div className="w-64 h-32 rounded-full object-cover border-4 shadow-md aspect-[2/1] animated-border"></div>
-          <img
-            src="/Parx.jpg"
-            alt="Benselam"
-            className="w-64 h-32 rounded-full object-cover border-4 border-transparent absolute top-0 left-0"
-            style={{ zIndex: 1 }}
-          />
-          <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-black/80 text-white text-sm font-semibold rounded-full px-4 py-1 shadow-lg border-2 border-white z-10 whitespace-nowrap">
-            Bensalem, PA - Fully Operational
-          </span>
-        </div>
         <div className="relative w-64 h-32 flex flex-col items-center">
           <div className="w-64 h-32 rounded-full object-cover border-4 shadow-md aspect-[2/1] animated-border"></div>
           <img
@@ -90,6 +78,18 @@ const HeroCarousel = () => {
           />
           <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-black/80 text-white text-sm font-semibold rounded-full px-4 py-1 shadow-lg border-2 border-[#FFD700] z-10 whitespace-nowrap">
             Hamilton, NJ - Coming Soon
+          </span>
+        </div>
+                <div className="relative w-64 h-32 flex flex-col items-center mt-8 mb-8 md:mt-0 md:mb-0">
+          <div className="w-64 h-32 rounded-full object-cover border-4 shadow-md aspect-[2/1] animated-border"></div>
+          <img
+            src="/Parx.jpg"
+            alt="Benselam"
+            className="w-64 h-32 rounded-full object-cover border-4 border-transparent absolute top-0 left-0"
+            style={{ zIndex: 1 }}
+          />
+          <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-black/80 text-white text-sm font-semibold rounded-full px-4 py-1 shadow-lg border-2 border-white z-10 whitespace-nowrap">
+            Bensalem, PA - Fully Operational
           </span>
         </div>
       </div>

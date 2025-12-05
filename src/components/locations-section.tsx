@@ -3,18 +3,6 @@ import { MapPin, Phone, Clock, Mail } from "lucide-react"
 
 const locations = [
   {
-    name: "BENSALEM",
-    address: "2643 Street Rd",
-    city: "Bensalem, PA, 19020",
-    phone: "(609) 616-6001",
-    email: "Lamhaa.nj@gmail.com",
-    hours: <p>
-    11:00 AM-3:00 PM <br/> 5:00 PM-10:00 PM<br />
-    TUESDAY CLOSED
-  </p>,
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
     name: "HAMILTON",
     address: "133 Youngs Rd",
     city: "Hamilton Township, NJ, 08619",
@@ -25,6 +13,18 @@ const locations = [
     TUESDAY CLOSED
   </p>,
     image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+    {
+    name: "BENSALEM",
+    address: "2643 Street Rd",
+    city: "Bensalem, PA, 19020",
+    phone: "(609) 616-6001",
+    email: "Lamhaa.nj@gmail.com",
+    hours: <p>
+    11:00 AM-3:00 PM <br/> 5:00 PM-10:00 PM<br />
+    TUESDAY CLOSED
+  </p>,
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ]
 
