@@ -97,6 +97,12 @@ const Footer = () => {
             <div className="flex flex-col items-center md:items-start">
               <h4 className="font-semibold text-foreground mb-4">Contact</h4>
               <div className="space-y-4">
+                                <div>
+                  <h5 className="font-medium text-foreground mb-2">Hamilton, New Jersey</h5>
+                  <div className="space-y-1 text-muted-foreground text-sm">
+                    <p>Phone: (609) 616-6000</p>
+                    <p>Email: Lamhaa.nj@gmail.com</p>
+                  </div>
                 <div>
                   <h5 className="font-medium text-foreground mb-2">Bensalem, Pennsylvania</h5>
                   <div className="space-y-1 text-muted-foreground text-sm">
@@ -104,12 +110,6 @@ const Footer = () => {
                     <p>Email: Lamhaa.nj@gmail.com</p>
                   </div>
                 </div>
-                <div>
-                  <h5 className="font-medium text-foreground mb-2">Hamilton, New Jersey</h5>
-                  <div className="space-y-1 text-muted-foreground text-sm">
-                    <p>Phone: (609) 616-6000</p>
-                    <p>Email: Lamhaa.nj@gmail.com</p>
-                  </div>
                 </div>
                 {/* Social Media */}
                 <div>
