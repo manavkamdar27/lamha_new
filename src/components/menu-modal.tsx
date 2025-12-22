@@ -40,12 +40,12 @@ items: [
     price: "$12.99" 
   },
   { 
-    name: "Chilly Paneer", 
+    name: "Chilli Paneer", 
     description: "Wok-tossed paneer, peppers, onions in spicy Indo-Chinese sauce.", 
     price: "$12.99" 
   },
   { 
-    name: "Chilly Rolls", 
+    name: "Chilli Rolls", 
     description: "Spring rolls tossed in manchurian sauce.", 
     price: "$12.99" 
   },
@@ -612,12 +612,12 @@ items: [
     price: "$12.99" 
   },
   { 
-    name: "Chilly Paneer", 
+    name: "Chilli Paneer", 
     description: "Wok-tossed paneer, peppers, onions in spicy Indo-Chinese sauce.", 
     price: "$12.99" 
   },
   { 
-    name: "Chilly Rolls", 
+    name: "Chilli Rolls", 
     description: "Spring rolls tossed in manchurian sauce.", 
     price: "$12.99" 
   },
