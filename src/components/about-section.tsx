@@ -82,8 +82,11 @@ const AboutSection = () => {
             <p className="text-lg mb-6 leading-relaxed" style={{color: '#4F4D46'}}>
             Lamhaa is our way of bringing people together through flavors that celebrate both tradition and creativity. From carefully crafted recipes to warm hospitality, we strive to make every visit feel special.
             </p>
-            <p className="text-lg leading-relaxed" style={{color: '#4F4D46'}}>
-            As we begin this journey, our promise is to honor authenticity while embracing innovation, creating dishes that tell stories and connect people at the table.
+           <p className="text-lg leading-relaxed" style={{color: '#4F4D46'}}>
+  As we begin this journey, our promise is to honor authenticity while embracing innovation, creating dishes that tell stories and connect people at the table.
+           </p>
+            <p className="text-lg mb-6 leading-relaxed font-semibold" style={{color: '#B8943A'}}>
+              For franchise related inquiries, please contact (609) 616-6000.
             </p>
           </div>
           <div className="relative">
