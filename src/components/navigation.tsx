@@ -20,6 +20,17 @@ import {
 import { cn } from "@/lib/utils"
 import MenuModal from "@/components/menu-modal"
 
+const orderLinks = [
+  {
+    label: "Hamilton",
+    href: "https://www.clover.com/online-ordering/lamhaa-group--hamilton-hamilton-township",
+  },
+  {
+    label: "Bensalem",
+    href: "https://www.clover.com/online-ordering/Lamhaa-bensalem",
+  },
+]
+
 const Navigation = () => {
   const [isMenuModalOpen, setIsMenuModalOpen] = React.useState(false)
   const [isSheetOpen, setIsSheetOpen] = React.useState(false)
@@ -60,7 +71,7 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:block">
-              <NavigationMenu>
+              <NavigationMenu viewport={false}>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuLink
@@ -103,14 +114,27 @@ const Navigation = () => {
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuLink
-                      href="https://www.clover.com/online-ordering/Lamhaa-bensalem"
-                      className={navigationMenuTriggerStyle() + ' font-oswald font-normal whitespace-nowrap'}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <NavigationMenuTrigger className={cn(navigationMenuTriggerStyle(), "font-oswald font-normal whitespace-nowrap")}>
                       Order Online
-                    </NavigationMenuLink>
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent className="min-w-[12rem]">
+                      <ul className="flex flex-col w-48 p-2">
+                        {orderLinks.map((link) => (
+                          <li key={link.href}>
+                            <NavigationMenuLink asChild>
+                              <a
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-full rounded-md px-3 py-2 text-sm font-oswald font-normal hover:bg-muted transition-colors"
+                              >
+                                {link.label}
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
@@ -177,16 +201,22 @@ const Navigation = () => {
                     >
                       Our Team
                     </Button>
-                    <Button
-                      variant="ghost"
-                      className="justify-start text-lg text-[#B8943A]"
-                      onClick={() => {
-                        window.open("https://www.clover.com/online-ordering/Lamhaa-bensalem", "_blank");
-                        setIsSheetOpen(false);
-                      }}
-                    >
-                      Order Online
-                    </Button>
+                    <div className="space-y-2 pt-2">
+                      <p className="text-lg font-semibold text-[#B8943A]">Order Online</p>
+                      {orderLinks.map((link) => (
+                        <Button
+                          key={link.href}
+                          variant="ghost"
+                          className="justify-start text-lg text-[#B8943A]"
+                          onClick={() => {
+                            window.open(link.href, "_blank", "noopener,noreferrer");
+                            setIsSheetOpen(false);
+                          }}
+                        >
+                          {link.label}
+                        </Button>
+                      ))}
+                    </div>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -201,4 +231,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation 
+export default Navigation
