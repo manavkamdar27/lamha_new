@@ -56,7 +56,7 @@ const HeroCarousel = () => {
   return (
     <section className="relative h-screen overflow-hidden pt-10">
       {/* Logo at the very top below navbar */}
-      <div className="absolute top-20 md:top-4 left-1/2 -translate-x-1/2 z-30">
+  <div className="relative w-full h-full flex items-center justify-center z-30">
   <img
     src="/Logo.jpg"
     alt="Lamhaa Logo"
@@ -67,7 +67,7 @@ const HeroCarousel = () => {
 
 
       {/* Two oval images side by side at the bottom of the carousel */}
-      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 z-20">
+      {/* <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 z-20">
         <div className="relative w-64 h-32 flex flex-col items-center">
           <div className="w-64 h-32 rounded-full object-cover border-4 shadow-md aspect-[2/1] animated-border"></div>
           <img
@@ -92,7 +92,7 @@ const HeroCarousel = () => {
             Bensalem, PA
           </span>
         </div>
-      </div>
+      </div> */}
 
       <style jsx>{`
         .animated-border {
