@@ -13,7 +13,7 @@ import {
 import { describe } from "node:test";
 import { Description } from "@radix-ui/react-dialog";
 
-const fullMenuBenselam = 
+const fullMenuBenselam =
 [
   {
     "category": "Soups",
@@ -38,9 +38,9 @@ const fullMenuBenselam =
   {
     "category": "Snacks",
     "items": [
-      { "name": "Plain Dosa", "description": "", "price": "$9.99" },
-      { "name": "Masala Dosa", "description": "", "price": "$12.99" },
-      { "name": "Cheese Dosa", "description": "", "price": "$12.99" },
+      { "name": "Plain Dosa", "description": "Crispy, golden South Indian rice crepe. Simple and satisfying.", "price": "$9.99" },
+      { "name": "Masala Dosa", "description": "Crispy dosa filled with spiced potato masala. A South Indian classic.", "price": "$12.99" },
+      { "name": "Cheese Dosa", "description": "Crispy dosa loaded with melted cheese. An indulgent twist on a classic.", "price": "$12.99" },
       { "name": "Chole Bhatura", "description": "Fluffy bhatura with spicy, tangy chickpea curry.", "price": "$13.99" },
       { "name": "Poori Bhaji", "description": "Puffy pooris with comforting, spiced potato curry.", "price": "$13.99" },
     ]
@@ -161,8 +161,8 @@ const fullMenuBenselam =
       { "name": "Butter Naan", "description": "Fresh tandoor-baked butter naan.", "price": "$4.49" },
       { "name": "Garlic Naan", "description": "Fresh tandoor-baked garlic naan.", "price": "$4.99" },
       { "name": "Bullet Naan", "description": "Fresh tandoor-baked spicy naan.", "price": "$4.99" },
-      { "name": "Chilli Garlic Naan", "description": "", "price": "$4.99" },
-      { "name": "Cheese Naan", "description": "", "price": "$5.99" },
+      { "name": "Chilli Garlic Naan", "description": "Fresh tandoor-baked naan with a spicy garlic kick.", "price": "$4.99" },
+      { "name": "Cheese Naan", "description": "Fresh tandoor-baked naan stuffed with melted cheese.", "price": "$5.99" },
       { "name": "Cheese Chilli Naan", "description": "Cheesy, spicy naan from the tandoor. Comforting kick.", "price": "$5.99" },
       { "name": "Peshawari Naan", "description": "Soft tandoor-baked bread stuffed with nuts, raisins and coconut.", "price": "$5.99" },
       // { "name": "Bagel Naan", "description": "", "price": "Sold Out" },
@@ -195,13 +195,14 @@ const fullMenuBenselam =
     "items": [
       { "name": "Mango Lassi", "description": "Creamy, sweet mango and yogurt blend. Indian classic.", "price": "$4.99" },
       { "name": "Butter Milk", "description": "Our traditional buttermilk.", "price": "$4.99" },
-      { "name": "Masala Chai", "description": "", "price": "$2.99" },
+      { "name": "Masala Chai", "description": "Traditional spiced Indian tea, brewed strong and aromatic.", "price": "$2.99" },
       // { "name": "Coffee", "description": "", "price": "Sold Out" },
-      { "name": "Sprite/Coke/Fanta", "description": "", "price": "$1.49" },
+      { "name": "Sprite/Coke/Fanta", "description": "Your choice of chilled soft drink.", "price": "$1.49" },
       // { "name": "Jigarthanda", "description": "South Indian cooling drink. Milk, almond gum, sarsaparilla, ice cream.", "price": "Sold Out" }
     ]
   }
 ];
+
 
 const fullMenuHamilton = [
   {
