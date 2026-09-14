@@ -21,7 +21,9 @@ const fullMenuBenselam =
       { "name": "Veg Manchow Soup", "description": "Indo-Chinese classic. Savory broth, crisp noodles, bold flavors.", "price": "$5.99" },
       { "name": "Chicken Manchow Soup", "description": "Indo-Chinese classic. Savory broth, crisp noodles, bold flavors.", "price": "$6.99" },
       { "name": "Lemon Coriander Soup", "description": "Zesty broth with fresh lemon and aromatic coriander.", "price": "$5.99" },
-      { "name": "Cream Of Tomato Soup", "description": "Cream of tomato is a flavorful, tangy South Indian tomato broth, spiced with aromatic herbs and seasonings.", "price": "$5.99" }
+      { "name": "Cream Of Tomato Soup", "description": "Cream of tomato is a flavorful, tangy South Indian tomato broth, spiced with aromatic herbs and seasonings.", "price": "$5.99" },
+      { "name": "Sweet Corn Soup", "description": "Creamy sweet corn soup with tender corn kernels. Light, comforting, and delicious.", "price": "$5.99" },
+      { "name": "Hot And Sour Soup", "description": "Spicy and tangy Indo-Chinese soup with crisp vegetables and a peppery kick.", "price": "$5.99" }
     ]
   },
   {
@@ -43,21 +45,28 @@ const fullMenuBenselam =
       { "name": "Cheese Dosa", "description": "Crispy dosa loaded with melted cheese. An indulgent twist on a classic.", "price": "$12.99" },
       { "name": "Chole Bhatura", "description": "Fluffy bhatura with spicy, tangy chickpea curry.", "price": "$13.99" },
       { "name": "Poori Bhaji", "description": "Puffy pooris with comforting, spiced potato curry.", "price": "$13.99" },
+      { "name": "Pav Bhaji", "description": "Spiced mixed vegetable mash served with buttered pav rolls. A Mumbai street food favorite.", "price": "$11.99" },
+      { "name": "Extra Bhature", "description": "An extra fluffy fried bread to go with your chole.", "price": "$2.99" },
     ]
   },
   {
     "category": "Veg Appetizers",
     "items": [
       { "name": "Aloo Tikki", "description": "Crispy, spiced potato patties served with tangy chutneys.", "price": "$11.99" },
+      { "name": "Aloo Tikki Chaat", "description": "Crispy, spiced potato patties topped with tangy chutneys, creamy yogurt, and savory spices.", "price": "$12.99" },
       { "name": "Papdi Chaat", "description": "Crisp discs, potatoes, chickpeas, sweet & spicy chutneys, creamy dahi.", "price": "$9.99" },
       { "name": "Palak Chaat", "description": "Crispy spinach, sweet yogurt, tangy chutneys. A textural delight.", "price": "$11.99" },
       { "name": "Veg Schezwan Momo", "description": "Pan-fried vegetable dumplings tossed in a fiery schezwan sauce.", "price": "$12.99" },
       { "name": "Pani Puri", "description": "Crispy puris, spiced potato, tangy flavored waters. Our special touch.", "price": "$8.99" },
+      { "name": "Dahi Poori", "description": "Crispy puris filled with potato and chickpeas, topped with cooling yogurt and tangy chutneys.", "price": "$9.99" },
+      { "name": "Sev Poori", "description": "Crispy puris topped with potatoes, tangy chutneys, yogurt, and crunchy sev.", "price": "$9.99" },
       { "name": "Pakora Platter", "description": "Mumbai Style Onion and Potato Bhajji. Crispy, flavorful.", "price": "$9.99" },
       { "name": "Paneer Chili", "description": "Wok-tossed paneer, peppers, onions in spicy Indo-Chinese sauce.", "price": "$12.99" },
       { "name": "Samosa", "description": "Crispy, golden pastry filled with spiced potato goodness.", "price": "$5.99" },
       { "name": "Thecha Panner Roll", "description": "Golden-fried paneer strips with a powerful, rustic Thecha spice blend.", "price": "$12.99" },
       { "name": "Veg Manchurian", "description": "Crispy vegetable balls tossed in tangy, spicy, Indo-Chinese sauce.", "price": "$12.99" },
+      { "name": "Veg Manchurian Gravy", "description": "Crispy vegetable balls tossed in a rich, tangy Indo-Chinese gravy.", "price": "$13.99" },
+      { "name": "Gobi Manchurian Dry", "description": "Crispy cauliflower florets tossed in a tangy, spicy Indo-Chinese sauce.", "price": "$12.99" },
       // { "name": "Makkai Bhel", "description": "Sweet corn and desi 'Kurkure', tossed with tangy chutneys.", "price": "Sold Out" },
       { "name": "Dahi Ke Kabab", "description": "Crispy rolls filled with a creamy, spiced hung curd stuffing.", "price": "$12.99" },
       { "name": "Chili Rolls", "description": "Spring rolls tossed in manchurian sauce.", "price": "$12.99" },
@@ -74,7 +83,9 @@ const fullMenuBenselam =
       { "name": "Goat Bhuna", "description": "Tender goat, slow-cooked in thick, aromatic, rich masala.", "price": "$18.99" },
       // { "name": "Egg Katori Chaat", "description": "Savory chaat topped with chutneys and spices served in crunchy egg katori.", "price": "Sold Out" },
       { "name": "Chicken Lollipop", "description": "Crispy, juicy chicken drumettes - frenched and fried to perfection. Served with Chef's special Schezwan sauce.", "price": "$14.99" },
-      { "name": "Schezwan Chicken Momos", "description": "Pan-fried chicken dumplings tossed in a fiery schezwan sauce.", "price": "$13.99" }
+      { "name": "Schezwan Chicken Momos", "description": "Pan-fried chicken dumplings tossed in a fiery schezwan sauce.", "price": "$13.99" },
+      { "name": "Jeera Chicken", "description": "Tender chicken cooked with roasted cumin and aromatic spices in a rich, flavorful masala.", "price": "$18.99" },
+      { "name": "Chilli Chicken", "description": "Wok-tossed chicken, peppers, onions in bold Indo-Chinese sauce.", "price": "$14.99" }
     ]
   },
   {
@@ -118,7 +129,15 @@ const fullMenuBenselam =
   { "name": "Cheese Butter Masala", "description": "Classic buttery tomato gravy elevated with soft, melting cheese.", "price": "$17.99" },
   // { "name": "Mirchi Baigan", "description": "", "price": "Sold Out" },
   { "name": "Lahmaa Special Veg", "description": "Our chef's signature vegetable medeley in delicately spiced cashew gravy.", "price": "$17.99" },
-  { "name": "Veg Kolhapuri", "description": "Chopped vegetables simmered in a rich, spicy gravy made with Kolhapuri masala and hint of coconut.", "price": "$15.99" }
+  { "name": "Veg Kolhapuri", "description": "Chopped vegetables simmered in a rich, spicy gravy made with Kolhapuri masala and hint of coconut.", "price": "$15.99" },
+  { "name": "Aloo Gobi", "description": "Classic potato and cauliflower curry, lightly spiced and comforting.", "price": "$16.99" },
+  { "name": "Lassooni Palak", "description": "Garlicky spinach curry, rich and aromatic.", "price": "$17.99" },
+  { "name": "Corn Saag", "description": "Sweet corn simmered in a creamy, spiced spinach gravy.", "price": "$16.99" },
+  { "name": "Paneer Lawabdar", "description": "Soft paneer in a rich, creamy tomato-cashew gravy.", "price": "$18.99" },
+  { "name": "Paneer Afghani", "description": "Paneer in a mild, creamy nut-based white gravy.", "price": "$19.99" },
+  { "name": "Chana Masala", "description": "Chickpeas simmered in a tangy, spiced tomato-onion gravy.", "price": "$13.99" },
+  { "name": "Kaju Curry", "description": "Cashews simmered in a rich, creamy, lightly spiced gravy.", "price": "$15.99" },
+  { "name": "Paneer Kadhai", "description": "Paneer and peppers tossed in a bold, freshly ground kadhai masala.", "price": "$15.99" }
 ]
   },
   {
@@ -135,7 +154,15 @@ const fullMenuBenselam =
       // { "name": "Manglorian Shrimp Curry", "description": "Shrimp in tangy, sweet mango-coconut curry with tropical twist.", "price": "Sold Out" },
       // { "name": "Haleem", "description": "Slow-cooked, soulful stew. Pounded wheat, tender meat, aromatic spices.", "price": "Sold Out" },
       // { "name": "Nilgiri Fish Curry", "description": "Fish simmered in a vibrant green gravy made with fresh mint, coriander and coconut.", "price": "Sold Out" },
-      // { "name": "Nilgiri Shrimp Curry", "description": "Shrimp simmered in a vibrant green gravy made with fresh mint, coriander and coconut.", "price": "Sold Out" }
+      // { "name": "Nilgiri Shrimp Curry", "description": "Shrimp simmered in a vibrant green gravy made with fresh mint, coriander and coconut.", "price": "Sold Out" },
+      { "name": "Anda Curry", "description": "Boiled eggs simmered in a spiced onion-tomato curry.", "price": "$17.99" },
+      { "name": "Garlic Chicken", "description": "Chicken tossed in a bold, garlicky, spicy sauce.", "price": "$19.99" },
+      { "name": "Palak Chicken", "description": "Chicken simmered in a creamy, spiced spinach gravy.", "price": "$19.99" },
+      { "name": "Methi Chicken", "description": "Chicken cooked with fresh fenugreek leaves in a rich, aromatic gravy.", "price": "$19.99" },
+      { "name": "Kadai Chicken", "description": "Chicken and peppers tossed in a bold, freshly ground kadhai masala.", "price": "$19.99" },
+      { "name": "Shrimp Curry Desi", "description": "Shrimp simmered in a traditional, spiced Indian curry.", "price": "$19.99" },
+      { "name": "Fish Curry Desi", "description": "Fish simmered in a traditional, spiced Indian curry.", "price": "$19.99" },
+      { "name": "Chicken Curry", "description": "Chicken simmered in a classic, spiced onion-tomato curry.", "price": "$19.99" }
     ]
   },
   {
@@ -147,11 +174,15 @@ const fullMenuBenselam =
       { "name": "Plain Rice", "description": "Steamed basmati.", "price": "$4.99" },
       { "name": "Curd Rice", "description": "Cooling, comforting rice gently mixed with Yogurt and flavorful tempering.", "price": "$9.99" },
       { "name": "Veg Dum Biryani", "description": "Fragrant basmati, seasonal veggies, slow-cooked 'dum' style.", "price": "$15.99" },
+      { "name": "Veg Pulao", "description": "Fragrant basmati rice cooked with mixed vegetables and whole spices.", "price": "$14.99" },
       { "name": "Veg Fried Rice", "description": "Hot and smoky rice, stir-fried with vibrant vegetables.", "price": "$13.99" },
       { "name": "Chicken Fried Rice", "description": "Hot and smoky rice, stir-fried with vibrant vegetables and crispy chicken.", "price": "$15.99" },
       { "name": "Egg Fried Rice", "description": "Hot and smoky rice, stir-fried with vibrant vegetables and fried egg.", "price": "$15.99" },
+      { "name": "Egg Chicken Fried Rice", "description": "Hot and smoky rice, stir-fried with vibrant vegetables, egg, and crispy chicken.", "price": "$16.99" },
       { "name": "Veg Hakka Noodles", "description": "Fiery and flavorful noodles, stir-fried with crunchy vegetables.", "price": "$13.99" },
-      { "name": "Chicken Hakka Noodles", "description": "Fiery and flavorful noodles, stir-fried with crunchy vegetables and crispy chicken.", "price": "$15.99" }
+      { "name": "Chicken Hakka Noodles", "description": "Fiery and flavorful noodles, stir-fried with crunchy vegetables and crispy chicken.", "price": "$15.99" },
+      { "name": "Triple Schezwan Rice", "description": "A fiery combination of rice and noodles tossed in schezwan sauce with mixed vegetables.", "price": "$15.99" },
+      { "name": "Triple Chicken Schezwan Rice", "description": "A fiery combination of rice and noodles tossed in schezwan sauce with chicken and vegetables.", "price": "$17.99" }
     ]
   },
   {
@@ -165,12 +196,16 @@ const fullMenuBenselam =
       { "name": "Cheese Naan", "description": "Fresh tandoor-baked naan stuffed with melted cheese.", "price": "$5.99" },
       { "name": "Cheese Chilli Naan", "description": "Cheesy, spicy naan from the tandoor. Comforting kick.", "price": "$5.99" },
       { "name": "Peshawari Naan", "description": "Soft tandoor-baked bread stuffed with nuts, raisins and coconut.", "price": "$5.99" },
+      { "name": "Chur Chur Naan", "description": "Flaky, shredded naan, crisp and buttery.", "price": "$13.99" },
       // { "name": "Bagel Naan", "description": "", "price": "Sold Out" },
       { "name": "Plain Tandoori Roti", "description": "Wholesome whole wheat flatbread, tandoor-baked.", "price": "$4.49" },
+      { "name": "Butter Tandoori Roti", "description": "Wholesome whole wheat flatbread, tandoor-baked and brushed with butter.", "price": "$4.99" },
       { "name": "Phulkha", "description": "Wholesome whole wheat flatbread, flame-puffed.", "price": "$2.99" },
       { "name": "Onion Kulcha", "description": "Soft, leavened bread, savory spiced onion stuffing.", "price": "$5.99" },
       { "name": "Lachaa Paratha", "description": "Multi-layered, flaky whole wheat paratha. Perfect texture.", "price": "$5.49" },
-      { "name": "Aloo Paratha", "description": "Whole wheat flatbread, spiced potato filling.", "price": "$8.99" }
+      { "name": "Aloo Paratha", "description": "Whole wheat flatbread, spiced potato filling.", "price": "$8.99" },
+      { "name": "Bread Basket", "description": "Roti, Garlic Naan, Bullet Naan.", "price": "$13.99" },
+      { "name": "Extra Bhature", "description": "An extra fluffy fried bread to go with your chole.", "price": "$2.99" }
     ]
   },
   {
@@ -187,6 +222,9 @@ const fullMenuBenselam =
       { "name": "Gadbad Ice Cream", "description": "Fun sundae! Multiple ice creams, fruits, nuts, sauces.", "price": "$10.99" },
       { "name": "Sizzling Brownie With Vanilla Ice Cream", "description": "Warm brownie on a sizzler, vanilla ice cream. Classic indulgence.", "price": "$9.99" },
       { "name": "Malpua", "description": "Sweet, fried pancake dipped malai sauce.", "price": "$8.99" },
+      { "name": "Apricot Ka Meetha", "description": "Sweet, tangy dried apricot dessert. Hyderabadi delight.", "price": "$8.99" },
+      { "name": "Gulab Jamun", "description": "Soft, syrup-soaked milk dumplings. A classic Indian sweet.", "price": "$4.99" },
+      { "name": "Rasmalai", "description": "Soft cheese dumplings soaked in sweet, saffron-infused milk.", "price": "$7.99" },
       // { "name": "Rose Malai Cake", "description": "Moist cake with unmistakable taste of Rose infused malai cream.", "price": "Sold Out" }
     ]
   },
@@ -198,10 +236,18 @@ const fullMenuBenselam =
       { "name": "Masala Chai", "description": "Traditional spiced Indian tea, brewed strong and aromatic.", "price": "$2.99" },
       // { "name": "Coffee", "description": "", "price": "Sold Out" },
       { "name": "Sprite/Coke/Fanta", "description": "Your choice of chilled soft drink.", "price": "$1.49" },
-      // { "name": "Jigarthanda", "description": "South Indian cooling drink. Milk, almond gum, sarsaparilla, ice cream.", "price": "Sold Out" }
+      // { "name": "Jigarthanda", "description": "South Indian cooling drink. Milk, almond gum, sarsaparilla, ice cream.", "price": "Sold Out" },
+      { "name": "Kathiyawadi Lemon Soda", "description": "Lemon soda with special Kathiyawadi masala.", "price": "$4.99" },
+      { "name": "Jeera Soda", "description": "Refreshing soda infused with roasted cumin.", "price": "$1.99" },
+      { "name": "Limca", "description": "Chilled lemon-lime soda.", "price": "$1.99" },
+      { "name": "Thums Up", "description": "Chilled classic Indian cola.", "price": "$1.99" },
+      { "name": "Aam Panna", "description": "Tangy raw mango cooler, spiced and refreshing.", "price": "$5.99" },
+      { "name": "Water", "description": "Bottled water.", "price": "$1.99" },
+      { "name": "Club Soda", "description": "Chilled sparkling club soda.", "price": "$3.99" }
     ]
   }
 ];
+
 
 
 const fullMenuHamilton = [
