@@ -10,10 +10,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.lamhaagroup.com"),
   title: "Lamhaa | Best Indian Restaurant in New Jersey & Pennsylvania",
   description: "Lamhaa is celebrated as the best Indian restaurant in New Jersey and Pennsylvania, offering refined dining, private events, and modern Indian cuisine.",
   keywords: "best Indian restaurant New Jersey, best Indian restaurant Pennsylvania, Lamhaa, Indian fine dining, NJ PA catering, private events",
   authors: [{ name: "Lamhaa" }],
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",

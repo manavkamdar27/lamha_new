@@ -212,18 +212,6 @@
   animation: shimmer 3s ease-in-out infinite;
 }
 
-@font-face {
-  font-family: 'GT Walsheim';
-  src: url('/fonts/GTWalsheim-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-.font-gtwalsheim {
-  font-family: 'GT Walsheim', sans-serif;
-}
-
 .font-oswald {
   font-family: 'Oswald', sans-serif;
 }

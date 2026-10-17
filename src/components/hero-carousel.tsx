@@ -56,7 +56,10 @@ const HeroCarousel = () => {
   return (
     <section className="relative h-screen overflow-hidden pt-10">
       {/* Logo at the very top below navbar */}
-  <div className="relative w-full h-full flex items-center justify-center z-30">
+  <div className="relative w-full h-full flex flex-col items-center justify-center z-30">
+  <h1 className="sr-only">
+    Lamhaa | Best Indian Restaurant in New Jersey &amp; Pennsylvania
+  </h1>
   <img
     src="/Logo.jpg"
     alt="Lamhaa Logo"
