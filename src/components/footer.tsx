@@ -1,22 +1,17 @@
 "use client"
 
+import Link from "next/link"
 import { ArrowUp, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import MenuModal from "@/components/menu-modal"
 import { useState } from "react"
+import { cityPages, cityPagePath } from "@/data/city-pages"
 
 const Footer = () => {
   const [isMenuModalOpen, setIsMenuModalOpen] = useState(false)
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
   }
 
   const openMenuModal = () => {
@@ -31,12 +26,12 @@ const Footer = () => {
     <>
       <footer className="bg-background border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Restaurant Info */}
             <div className="flex flex-col items-center md:items-start">
-              <img 
-                src="/Logo.jpg" 
-                alt="Logo" 
+              <img
+                src="/Logo.jpg"
+                alt="Logo"
                 className="h-48 w-auto object-contain mb-4"
               />
             </div>
@@ -46,8 +41,8 @@ const Footer = () => {
               <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Button 
-                    variant="link" 
+                  <Button
+                    variant="link"
                     className="p-0 h-auto text-muted-foreground hover:text-foreground"
                     onClick={openMenuModal}
                   >
@@ -55,39 +50,47 @@ const Footer = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button 
-                    variant="link" 
-                    className="p-0 h-auto text-muted-foreground hover:text-foreground"
-                    onClick={() => scrollToSection('locations')}
-                  >
-                    Locations
+                  <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                    <a href="/#locations">Locations</a>
                   </Button>
                 </li>
                 <li>
-                  <Button 
-                    variant="link" 
-                    className="p-0 h-auto text-muted-foreground hover:text-foreground"
-                    onClick={() => scrollToSection('events')}
-                  >
-                    Private Events
+                  <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                    <a href="/#events">Private Events</a>
                   </Button>
                 </li>
                 <li>
-                  <Button 
-                    variant="link" 
-                    className="p-0 h-auto text-muted-foreground hover:text-foreground"
-                    onClick={() => scrollToSection('about')}
-                  >
-                    About Us
+                  <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                    <a href="/#about">About Us</a>
                   </Button>
                 </li>
                 <li>
-                  <Button 
-                    variant="link" 
-                    className="p-0 h-auto text-muted-foreground hover:text-foreground"
-                    onClick={() => scrollToSection('team')}
-                  >
-                    Our Team
+                  <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                    <a href="/#team">Our Team</a>
+                  </Button>
+                </li>
+              </ul>
+            </div>
+
+            {/* We Also Serve */}
+            <div className="flex flex-col items-center md:items-start">
+              <h4 className="font-semibold text-foreground mb-4">We Also Serve</h4>
+              <ul className="space-y-2">
+                {cityPages.map((page) => (
+                  <li key={page.slug}>
+                    <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                      <Link href={cityPagePath(page.slug)}>{page.cityLabel}</Link>
+                    </Button>
+                  </li>
+                ))}
+                <li>
+                  <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                    <Link href="/banquet-hall-bensalem-pa">Banquet Hall (Bensalem)</Link>
+                  </Button>
+                </li>
+                <li>
+                  <Button asChild variant="link" className="p-0 h-auto text-muted-foreground hover:text-foreground">
+                    <Link href="/wedding-catering-nj">Wedding Catering (NJ)</Link>
                   </Button>
                 </li>
               </ul>
